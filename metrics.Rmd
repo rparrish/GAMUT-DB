@@ -1,0 +1,11 @@
+---
+title: "The GAMUT Metrics"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+The GAMUT metric definitions can be downloaded <a href="GAMUT%20Metrics_final_version%204.10.2016.pdf">here</a>. 

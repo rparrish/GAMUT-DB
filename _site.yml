@@ -1,0 +1,40 @@
+name: "gamut-qi"
+output_dir: "."
+navbar:
+  title: "GAMUT"
+  type: inverse
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "The Metrics"
+      href: metrics.html
+    - text: "Join Us"
+      href: join.html
+    - text: "Sponsoring Organizations"
+      href: sponsors.html
+    - text: "Publications/Presentations"
+      href: publications.html
+    - text: "About Us"
+      href: about.html
+    - text: "FAQ"
+      href: faq.html
+  right:
+    - text: "REDCap Login"
+      href: https://ampa.org/redcap
+      
+#      
+#    - text: "Resources"
+#      icon: fa-gear
+#      menu:
+#        - text: "Quality Improvement Toolkit"
+#          href: qi.html
+#        - text: "Data Reporting"
+#          href: data_reporting.html
+output:
+  html_document:
+    theme: cerulean
+    highlight: textmate
+    include:
+      after_body: footer.html
+    css: styles.css
+    

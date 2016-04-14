@@ -1,0 +1,35 @@
+---
+title: "Sponsoring Organizations"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## AMPA
+
+## AAP-SOTM
+
+## Laerdal Foundation
+
+## Medivac Foundation
+
+## Akron Children's Foundation
+
+
+## Cincinatti Children's Foundation
+
+## Original Participants
+
+
+### Ohio 
+
+
+### New Orleans AAP
+
+
+### Denver AMPA
+
+
