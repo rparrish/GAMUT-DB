@@ -26,11 +26,13 @@ To facilitate medical transport programs of all types collaborating to improve t
 
 <center><h3><a href="join.html">Join us</a></h3></center>
 
-<center>![](sponsors.png)</center>
-
 For more information contact:  
 
 > Michael Bigham, MD, FAAP, FCCM <a href="mailto:mbigham@chmca.org">mbigham@chmca.org</a>  
 > Hamilton Schwartz, MD, FAAP  <a href="mailto:hamilton.schwartz@cchmc.org">hamilton.schwartz@cchmc.org</a>
 
+
+<center>
+<img src="sponsors.png" width="400px" height="300px" />
+</center>
 
