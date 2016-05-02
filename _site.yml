@@ -1,5 +1,5 @@
 name: "gamut-qi"
-output_dir: "."
+output_dir: "_site"
 navbar:
   title: "GAMUT"
   type: inverse
