@@ -8,28 +8,28 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
-## AMPA
+### AMPA
 
-## AAP-SOTM
+### AAP-SOTM
 
-## Laerdal Foundation
+### Laerdal Foundation
 
-## Medivac Foundation
+### Medivac Foundation
 
-## Akron Children's Foundation
-
-
-## Cincinatti Children's Foundation
-
-## Original Participants
+### Akron Children's Foundation
 
 
-### Ohio 
+### Cincinatti Children's Foundation
+
+### Original Participants
 
 
-### New Orleans AAP
+__Ohio__ 
 
 
-### Denver AMPA
+__New Orleans AAP__
+
+
+__Denver AMPA__
 
 
