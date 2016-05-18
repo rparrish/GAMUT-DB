@@ -8,4 +8,4 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
-The GAMUT metric definitions can be downloaded <a href="GAMUT%20Metrics_final_version%204.10.2016.pdf">here</a>. 
+The GAMUT metric definitions can be downloaded <a href="GAMUT%20Metrics_version%205.16.2016.pdf">here</a>. 
