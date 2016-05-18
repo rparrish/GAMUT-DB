@@ -20,7 +20,7 @@ navbar:
       href: faq.html
   right:
     - text: "REDCap Login"
-      href: https://ampa.org/redcap
+      href: https://redcap.gamutqi.org
       
 #      
 #    - text: "Resources"
