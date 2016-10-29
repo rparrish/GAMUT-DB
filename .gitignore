@@ -1,5 +1,7 @@
 .Ruserdata
 GAMUT-website.Rproj
+_site/*
+
 # History files
 .Rhistory
 .Rapp.history
