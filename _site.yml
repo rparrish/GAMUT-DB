@@ -8,16 +8,18 @@ navbar:
       href: index.html
     - text: "The Metrics"
       href: metrics.html
-    - text: "Join Us"
-      href: join.html
-    - text: "Sponsoring Organizations"
-      href: sponsors.html
-    - text: "Publications/Presentations"
-      href: publications.html
-    - text: "About Us"
-      href: about.html
     - text: "FAQ"
       href: faq.html
+    - text: "Join Us"
+      href: join.html
+    - text: "About Us"
+      menu: 
+      - text: "Contact Us"
+        href: about.html
+      - text: "Sponsoring Organizations"
+        href: sponsors.html
+      - text: "Publications/Presentations"
+        href: publications.html
   right:
     - text: "REDCap Login"
       href: https://redcap.gamutqi.org
@@ -32,7 +34,7 @@ navbar:
 #          href: data_reporting.html
 output:
   html_document:
-    theme: cerulean
+    theme: flatly
     highlight: textmate
     include:
       after_body: footer.html
