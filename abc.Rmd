@@ -1,5 +1,5 @@
 ---
-title: "Achievable Benchmarks of Care (ABC)"
+title: "Achievable Benchmarks of Care (ABC)&trade;"
 output: html_document
 bibliography: references.bib
 csl: apa.csl
@@ -10,6 +10,7 @@ knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 
 library(tidyverse)
 library(ztable)
+library(htmlTable)
 
 ```
 
@@ -17,7 +18,7 @@ library(ztable)
 
 The GAMUT QI Collaborative reports show how participant programs perform on individual quality metrics compared to other participants. The desired level of performance for each metric is referred to as a 'benchmark', which can be used as a targets or goals for quality improvement initiatives and to demonstrate that a program is continuously providing high quality care. 
 
-There are a number of approaches in calculating benchmarks in healthcare, such as "better than group average", "Leading 10%", or expert consensus (ie. targets of 100% or 0%). While these benchmark methods are intuitive and simple to implement, they do have limitations. "Better than average" does not really establish the best possible performance level. The "Leading 10%" method is most suitable when the group sizes are fairly similar. Expert consensus may be appropriate for some metrics but not for others where it is unclear what the best performance level really should be. 
+There are a number of approaches in calculating benchmarks in healthcare, such as "significantly better than average", "Leading 10%", or expert consensus (ie. predetermined targets such as 100% or 0%). While these benchmark methods are intuitive and relatlively simple to implement, they do have limitations. "Significantly better than average" does not really establish the best possible performance level. The "Leading 10%" method is most suitable when the group sizes are fairly similar. Expert consensus may be appropriate for some metrics but not for others where it is unclear what the best performance level really should be. 
 
 The GAMUT QI collaborative uses the Achievable Benchmarks of Care&trade; (ABC) method [@kiefe_identifying_1998]. The ABC&trade; establishes the performance level consistently being attained by the best participants that account for at least 10% of the overall population.  
 
@@ -25,7 +26,7 @@ The ABC&trade; is designed to compare performance between groups of varying size
 
 ## How it works
 
-For illustration purposes, we'll compare the "Leading 10%" method and the ABC&trade;. We'll use data from a hypothetical list of 16 programs of varying sizes. Some programs have contributed data for a full 12 months and others have not. 
+Let's compare the "Leading 10%" and the ABC&trade; methods. Table `r tblNoNext()` shows data from a hypothetical list of 16 transport programs of varying sizes. Some programs have contributed data for a full 12 months and others have not. 
 
 
 ```{r create abc data, eval = FALSE, echo = FALSE}
@@ -81,71 +82,71 @@ abc$rate <- round(abc$num/abc$den,3)
 ```
 
 
+<center>
+```{r raw htmlTable, }
+options(table_counter = TRUE)
 
-```{r abc ztable, results = 'asis'}
-
-#' ztable options
-options(ztable.type="html")
-
-abc_table <- 
-    abc %>%
-    data.frame() %>%
-    ztable(. ,
-           position = "center", 
-           align = c("rlccc"), 
-           digits = c(1,0,0,0,0,2), 
-           caption = "ABC raw data"
-)
-
-print(abc_table)
-
+htmlTable(abc,
+          cgroup = c("", "metric&#42;"),
+          n.cgroup = c(2,3),
+          align = "lcccr",
+          align.header = "lcccr",
+          header = c("Program", "months&nbsp;&nbsp;&nbsp;", "numerator&nbsp;&nbsp;&nbsp;", "denominator", "rate"),
+          pos.caption = "top",
+          tfoot = "&#42; The sums of all months with valid data.",
+          caption="Simulated data for illustration purposes.",
+          rnames = FALSE
+          )
 
 ```
+</center>
+
 
 
 ### Leading 10\%
 
 Also referred to as 'Top Decile', this method simply sorts the rate of the programs from top performers to bottom. The benchmark value is interpolated as the 90th percentile of the rates. 
 
-```{r ztable top 10, results = 'asis'}
+<center>
+```{r decile htmlTable, }
 abc_decile <- 
     abc %>% 
     arrange(desc(rate))
 
-
-abc_decile_table <- 
-    abc_decile %>%
-    data.frame() %>%
-    ztable(., 
-           position = "center", 
-           align = c("rlccc"), 
-           digits = c(1,0,0,0,0,2), 
-           caption = "Leading 10\\%"
-)
-
-print(abc_decile_table)
+htmlTable(abc_decile,
+          cgroup = c("", "metric"),
+          n.cgroup = c(2,3),
+          align = "lcccr",
+          align.header = "lcccr",
+          header = c("Program", "months&nbsp;&nbsp;&nbsp;", "numerator&nbsp;&nbsp;&nbsp;", "denominator", "rate"),
+          #pos.caption = "top",
+          #tfoot = "&dagger; The sums of all months with valid data.",
+          caption="Programs ranked by rate",
+          rnames = FALSE
+          )
 
 top_decile <- quantile(abc_decile$rate, .9)
 
-
-
 ```
+</center>
 
-In this case, the 90th percentile is interpolated to be `r top_decile`. Note that this is based on two programs that have reported just one month of data and their numbers of elligible cases are relatively low.
+
+In Table `r tblNoLast()`, the 90th percentile is interpolated to be `r top_decile`. Note that this is based on two programs that have reported just one month of data and their numbers of elligible cases are relatively low.
 
 
 ### ABC&trade; method
 
 The ABC&trade; is slightly more complicated, as it takes into consideration the number of elligible cases and the overall population, with an adjustment for programs with low denominators. 
 
-Using the same hypothetical data sorted from top to bottom by rates, we first need to calculate the Adjusted Performance Factor (APF), which adds 1 to the numerator and 2 to the denominator for each program. This adjustment has a minimal effect when the denominator is above 50. 
+Using the same hypothetical data, we first need to calculate the Adjusted Performance Factor (APF), which adds 1 to the numerator and 2 to the denominator for each program. 
 
 $$APF = \frac{(num + 1)}{(den + 2)}$$
 
-Next, the programs are sorted by the APF and the cumulative percentage of the total propulation is calculated. The top programs that account for at least 10\% of the overall population are used to determine the ABC&trade; benchmark, which is the sum of the numerators divided by the denominators of that group.
+Next, the programs are sorted by the APF and the cumulative percentage of the total propulation is calculated. The top programs that account for at least 10\% of the overall population are the benchmark group. The ABC&trade; benchmark is calculated as the sum of the numerators divided by the sum of denominators from the benchmark group.
 
 
-```{r abc_table, results = 'asis'}
+<center>
+```{r abc htmlTable, }
 abc_method <- 
     abc %>%
     mutate(apf = round((num + 1)/(den + 2),3)) %>%
@@ -153,19 +154,21 @@ abc_method <-
     mutate(cumulative_sum = cumsum(den), 
            pop_accounted = round(cumulative_sum/sum(abc$den), 3))
 
-abc_table <- 
-    abc_method %>%
-    data.frame() %>%
-    ztable(., 
-           position = "center", 
-           align = c("rlcccccc"), 
-           digits = c(1,0,0,0,0,2,3,1,2), 
-           
-           caption = "ABC Method"
-) %>%
-    hlines(add = 3)
-
-print(abc_table)
+htmlTable(abc_method,
+          cgroup = c("", "metric", "","population"),
+          n.cgroup = c(2,3,1, 2),
+          align = "lcccrrcc",
+          align.header = "lccccrrcc",
+          header = c("Program", "months&nbsp;&nbsp;&nbsp;", "numerator&nbsp;&nbsp;&nbsp;", "denominator", 
+                     "rate", "&nbsp;&nbsp;&nbsp;APF&dagger;&nbsp;&nbsp;&nbsp;", "cumulative sum", "%"),
+          #pos.caption = "top",
+          tfoot = "&dagger; Used only for ranking purposes.",
+          caption="Programs ranked by APF",
+          col.rgroup = c("#F7F7F7", "none"),
+          rgroup = c(c("Benchmark group", "&nbsp;"), ""),
+          n.rgroup = c(3,nrow(abc_method) - 3),
+          rnames = FALSE
+          )
 
 abc_results <- 
     abc_method %>%
@@ -174,19 +177,13 @@ abc_results <-
               den = sum(den), 
               rate = round(num/den, 3))
     
-    
+
 ```
+</center>
 
-In this example, the total population is `r sum(abc$den)`. With `r abc_results$den` elligible cases, the top three programs account for at least 10\% of the overall population. The average rate among those top programs is `r abc_results$rate` (`r abc_results$num`/`r abc_results$den`), which becomes the ABC&trade; rate. 
+In Table `r tblNoLast()`, the total population is `r sum(abc$den)`. With `r abc_results$den` elligible cases, the top three programs account for at least 10\% of the overall population. The average rate among those top programs is `r abc_results$rate` (`r abc_results$num`/`r abc_results$den`), which becomes the ABC&trade; rate. 
 
-
-For the GAMUT QI Reports, the ABC&trade; benchmarks are calculated when the dashboards are viewed based on the current data that is avalialbe. They cover a rolling 12 month period that ends two months before the current date. This is to allow more programs to submit their data before the ABC&trade; benchmarks are calculated.
-
-
-
+For the GAMUT QI Reports, the ABC&trade; benchmarks are calculated when the dashboards are viewed based on the current data that is available. They cover a rolling 12 month period that ends two months before the current date. This is to allow more programs to submit their data before the ABC&trade; benchmarks are calculated.
 
 
 ## Resources
-
-
-
