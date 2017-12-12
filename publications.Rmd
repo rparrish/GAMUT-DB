@@ -9,27 +9,84 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Abstracts
 
-Ouch! Pain Assessment in Pediatric and Neonatal Transport.  Michael Bigham, Ryan Reichert, Hamilton Schwartz.  Pediatrics, Feb 2016, 137 (Supplement 3) 629A.  
+Bigham MT, Reichert R, and Schwartz H. Ouch! Pain Assessment in Pediatric and Neonatal Transport. Pediatrics. Feb 2016.
+
+Bhalala U, Srivastava N, Gothard MD, Bigham MT.  Study of CPR and Transport Quality Metrics Using Ground Air Medical Quality Transport (GAMUT) Data.  Crit Care Med.  Dec 2017.
+
+Howell K, Karish C, Metzger K, Thompson M, and Bigham MT. Saving for a Rainy Day:  Quality Project to Reduce Intravenous Acetaminophen in the PICU.  Crit Care Med.  Dec 2017.
+
 
 ## Manuscripts
 
-Quality Metrics in Neonatal and Pediatric Critical Care Transport: A Consensus Statement. Pediatr Crit Care Med 2013; 14:518-524.  
+Bigham MT and Schwartz HP for the Ohio Neonatal/Pediatric Transport Quality Collaborative.  “Quality Metrics in Neonatal and Pediatric Critical Care Transport:  A Consensus Statement.”  Pediatr Crit Care Med. 2013 Jun;14(5):518-24.
 
-Measure, Report, Improve: The Quest for Best Practices for High-Quality Care in Critical Care Transport. Clinical Pediatric Emergency Medicine, 2013 Sept; 14(3):171-79.  
+Smith KA, Gothard MD, Schwartz HP, Giuliano JS, Forbes M, and Bigham MT.  “Risk Factors for Failed Tracheal Intubation in Pediatric and Neonatal Critical Care Specialty Transport.”  Prehosp Emerg Care. 2015 January-March;19(1):17-22.
 
-Quality Metrics in Neonatal and Pediatric Critical Care Transport: A National Delphi Project.  Schwartz HP, Bigham MT, Schoettker PJ, Meyer K, Trautman MS, Insoft RM; American Academy of Pediatrics Section on Transport Medicine. Pediatr Crit Care Med. 2015 Oct;16(8):711-7.  
+Bigham MT and Schwartz HP.  “Measure, Report, Improve:  The Quest for Best Practices for High-Quality Care in Critical Care Transport.”  Clin Ped Emerg Med.  2013Sept; 14(3):171-179.
 
-Intubation in Pediatric/Neonatal Critical Care Transport: National Performance.  Bigelow AM, Gothard MD, Schwartz HP, Bigham MT.  Prehosp Emerg Care. 2015 Jul-Sep;19(3):351-7.  
+Joyce CN, Libertin R, Bigham MT.  “Family-centered care in pediatric critical care Transport.”  Air Med J.  2015 Jan-Feb; 34(1) 32-6.
+
+Bigelow AM, Gothard MD, Schwartz HP, Bigham MT.  “Intubation in Pediatric/Neonatal Critical Care Transport: National Performance.”  Prehosp Emerg Care. 2015 Jul-Sep;19(3):351-7.
+
+Schwartz HP, Bigham MT, et al.  “Quality Metrics in Neonatal and Pediatric Critical Care Transport: A National Delphi Project.”  Ped Crit Care Med.  2015 Oct; 16(8):711-7. 
+
+Bigham MT.  “More than a Bus Ride:  Quality and Outcomes of Pediatric Specialty Transport.”  Acta Paediatr. 2016 Nov;105(11):1335.
+
+Reichert R, Gothard MD, Schwartz HP, and Bigham MT.  “Benchmarking Pain Assessment Rate in Critical Care Transport.”  Air Med J. 2016 Nov - Dec;35(6):344-347.
+
+Bigham MT, Reichert RJ, Gothard ME, Gothard MD, Parish, PR, Schwartz, HP.  “Intubation Success in Critical Care Transport: A Multicenter Study.”  (accepted pending revisions, Prehospital Emergency Care).
+
+Kelly R, Fitzgerald M, Schwartz HP, Bigham MT, Trautman M.  “The Use of Waveform Capnography During Neonatal and Pediatric Transport.”  (under review).
+
 
 
 ## Presentations
 
-April 2015.  "Quality Metrics in Critical Care Transport:  Building the Benchmark."  Critical Care Transport Medical Conference, Charlotte, NC.  
+April 2013.  “Forming Consensus Guidelines for Quality Metrics in Neonatal and Pediatric Transport.”  Critical Care Transport Medical Conference.  Austin, Texas.
 
-October 2014.  Plenary Presentation "Update on National Quality Metrics."   American Academy of Pediatrics, National Conference and Exhibition, Section on Transport Medicine Academic and Scientific Program.  
+May 2013.  “Forming Consensus Guidelines for Quality Metrics in Neonatal and Pediatric Transport.”  Pediatric Grand Rounds.  MetroHealth Medical Center.  Cleveland, Ohio.
 
-October 2013.  "Measure, Report, Improve:  The search for best practices and high quality care in transport."  Air Medical Physician Association, Medical Director Forum.  Virginia Beach, VA.
+May 2013.  “Forming Consensus Guidelines for Quality Metrics in Neonatal and Pediatric Transport.”  Translational Science Seminar Series.  Akron Children’s Hospital.  Akron, Ohio.
+
+July 2013.  “Air Medical Physician Association Quality Metrics:  Where it all began.”  Air Medical Physician Association – Quality Metrics Summit.  Denver, Colorado.  Co-director.
+
+October 2013.  “Measure, Report, Improve:  The search for best practices and high-quality care in transport.”  Pediatrics Grand Rounds.  Icahn School of Medicine at Mount Sinai.  New York, NY.
+
+October 2013.  “QA Consensus Conference:  Metrics Update.”  Air Medical Physician Association, Medical Director Core Curriculum.  Virginia Beach, VA.
+
+October 2013.  “Measure, Report, Improve:  The search for best practices and high quality care in transport.”  Air Medical Physician Association, Medical Director Forum.  Virginia Beach, VA.
+
+October 2014.  Plenary Presentation “Update on National Quality Metrics.”   American Academy of Pediatrics, National Conference and Exhibition, Section on Transport Medicine Academic and Scientific Program.
+
+April 2015.  “Quality Metrics in Critical Care Transport:  Building the Benchmark.”  Critical Care Transport Medical Conference, Charlotte, NC.
+
+April 2016.  “Quality Metrics in Critical Care Transport:  Enough Measuring…Let’s Improve.”  Critical Care Transport Medical Conference, Charlotte, NC.
+
+September 2016.  “Benchmarking and Building a Database:  The GAMUT project.”  2nd Edition Transport of High Risk Neonates.  Copenhagen, Denmark.
+
+September 2016.  “Run the GAMUT:  How does your program stack up?”  Air Medical Transport Conference.  Charlotte, NC.
+
+October 2016.  “Finding Hidden Treasures:  Quality Metrics and Quest for Best Practices.”  Co-presented with HP Schwartz.  American Academy of Pediatrics, National Conference and Exhibition; Section on Transport Medicine.  San Francisco, CA.
+
+January 2017.  “Unplanned Device Dislodgement:  A Quality Metric in Critical Care Transport.”  Society of Critical Care Medicine, Critical Care Congress.  Honolulu, Hawaii.
+
+March 2017. “The Journey for Optimal Transport Care.”  Association for Critical Care Transport, Standards Committee.  Philadelphia, PA.
+
+April 2017.  “GAMUT Data Managers Meeting.”  Critical Care Transport Medical Conference.  San Antonio, TX.
+
+July 2017.  “A Tad, Dash, Pinch, and Smidgen: Why Not Measure Like Bobby Flay?”  PHI Air Medical, National Medical Director Meeting.  Middleburg, VA.
+
+July 2017.  “Sir Isaac Newton and Quality Improvement:  What Actions Requires a Reaction?”  PHI Air Medical, National Medical Director Meeting.  Middleburg, VA.
+
+August 2017.  “Key Quality Indicators in Neonatal and Pediatric Transport.”  3rd Edition Transport of High Risk Infants.  Oxford, UK.  
+
+October 2017.  “The GAMUT Project:  Introduction and review of current GAMUT data.”  Understanding GAMUT – Council on Accreditation of Medical Transport Services (CAMTS) Preconference.  Fort Worth, TX.
 
 
 ## Press
 
+https://www.akronchildrens.org/cms/creating-metrics-through-collaboration/
+
+https://www.akronchildrens.org/cms/pursuing_best_practices_in_neonatal_and_pediatric_transport/
+
+https://www.acep.org/Content.aspx?ID=101575

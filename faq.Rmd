@@ -28,9 +28,12 @@ The monthly volumes are required for each age group. Otherwise, only enter data 
 While there is no hard deadline, data should be entered within 60 days of the end of a month. (ie. December data should be entered by the end of February) 
 
 ## How do I get help?
-For participating programs, the Data Managers listserv is the best resource for questions and assistance. Please send your question to `data_managers@ampa.org`.
+For participating programs, the Data Managers listserv is the best resource for questions and assistance from your peers who are working successfully with the database and the GAMUT quality metrics.  So, to engage discussion please send your questions to data_managers@ampa.org.  
 
-For all others, please use the 'About Us' menu item at the top of this page.
+If your question is specific for GAMUT program leadership (either technical or clinical), please send your question to GAMUT@akronchildrens.org.  
+
+For all others questions, please use the ‘About Us’ menu item at the top of this page.
+
 
 ## How is data submitted?
 The data is collected and managed using [REDCap](http://project-redcap.org)[@harris_research_2009] electronic data capture tools hosted by AMPA.  REDCap (Research Electronic Data Capture) is a secure, web-based application designed to support data capture for research studies and quality improvement projects.
