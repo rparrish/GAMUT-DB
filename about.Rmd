@@ -7,8 +7,14 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+### Michael Bigham, MD, FAAP, FCCM  
+mbigham@akronchildrens.org  
+GAMUT Project Co-Founder
 
-## Michael Bigham, MD, FAAP, FCCM 
+### Hamilton Schwartz, MD, FAAP   
+hamilton.schwartz@cchmc.org    
+GAMUT Project Co-Founder
 
-## Hamilton Schwartz, MD, FAAP
-
+### Heather Anthony, RN, CRN   
+GAMUT@akronchildrens.org    
+GAMUT Program Coordinator 

@@ -18,18 +18,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ### Akron Children's Foundation
 
-
 ### Cincinatti Children's Foundation
 
-### Original Participants
-
-
-__Ohio__ 
-
-
-__New Orleans AAP__
-
-
-__Denver AMPA__
 
 
