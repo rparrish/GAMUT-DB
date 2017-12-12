@@ -1,36 +1,46 @@
 ---
-title: "FAQ"
-output: html_document
+title: "Frequently Asked Questions"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+bibliography: references.bib
+csl: apa.csl
+
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Frequently Asked Questions
 
-
-####  How does it work?
+##  How does it work?
 Participating air & ground critical care transport programs submit aggregated data on a monthly basis. There is no individual patient or transport-level information. Programs can submit data for the entire program or based on functional units (base locations, specialty teams, etc.)
 
 Each participating program should designate a primary data manager, who is responsible for collecting and submitting data.
 
 
-#### Do all the questions need to be answered? 
+## Do all the questions need to be answered? 
 The monthly volumes are required for each age group. Otherwise, only enter data for those metrics that you intend to report. For example, if you are reporting Adverse Events but had none, enter '0'. However, if you are not reporting Adverse Events then leave that question blank.
 
 
-#### Is there a deadline for submitting data? 
+## Is there a deadline for submitting data? 
 While there is no hard deadline, data should be entered within 60 days of the end of a month. (ie. December data should be entered by the end of February) 
 
-#### How do I get help?
+## How do I get help?
 For participating programs, the Data Managers listserv is the best resource for questions and assistance. Please send your question to `data_managers@ampa.org`.
 
 For all others, please use the 'About Us' menu item at the top of this page.
 
-#### Data Entry
-The data is collected and managed using [REDCap](http://project-redcap.org)[1] electronic data capture tools hosted by AMPA.  REDCap (Research Electronic Data Capture) is a secure, web-based application designed to support data capture for research studies and quality improvement projects.
+## How is data submitted?
+The data is collected and managed using [REDCap](http://project-redcap.org)[@harris_research_2009] electronic data capture tools hosted by AMPA.  REDCap (Research Electronic Data Capture) is a secure, web-based application designed to support data capture for research studies and quality improvement projects.
 
 
+## How are the Benchmark scores determined?
 
-[1] Paul A. Harris, Robert Taylor, Robert Thielke, Jonathon Payne, Nathaniel Gonzalez, Jose G. Conde, Research electronic data capture (REDCap) - A metadata-driven methodology and workflow process for providing translational research informatics support, J Biomed Inform. 2009 Apr;42(2):377-81. 
+The GAMUT QI collaborative uses the Achievable Benchmarks of Care&trade; (ABC) method [@kiefe_identifying_1998]. The ABC&trade; establishes the performance level consistently being attained by the best participants that account for at least 10% of the overall population. 
+
+Additional details about the ABC&trade; can be found [here](abc.html).
+
+
+## References 
