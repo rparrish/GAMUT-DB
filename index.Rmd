@@ -18,7 +18,7 @@ The Ground Air Medical qUality Transport Quality Improvement Collaborative uses 
 
 ## The vision
 
-To facilitate medical transport programs of all types collaborating to improve the quality of care they deliver. This is achieved though the following:  
+To facilitate medical transport programs of all types collaborating to improve the quality of care they deliver. This is achieved through the following:  
 
  - Establishing strict definitions for quality metrics that are agreed-upon, important, reliable, relevant and feasible to data gather.  
  - Developing a database and the infrastructure for programs to track, report, and analyze their performance by comparing it to other programs.  
